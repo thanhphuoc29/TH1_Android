@@ -65,6 +65,8 @@
             android:layout_height="wrap_content"
             android:text="Thêm"
             android:layout_marginLeft="5dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
             />
         <Button
             android:id="@+id/btnUpdateTour"
@@ -72,6 +74,8 @@
             android:layout_height="wrap_content"
             android:text="Cập nhật"
             android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
             />
     </LinearLayout>
    <androidx.appcompat.widget.SearchView
