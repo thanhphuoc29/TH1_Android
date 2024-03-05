@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập Tour"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên tour"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/txtSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập lịch trình"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/timeStart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Giờ bắt đầu"-->
+<!--        android:focusable="false"-->
+<!--        android:onClick="selectTimePicker"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:id="@+id/dateStart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Ngày bắt đầu"-->
+<!--        android:focusable="false"-->
+<!--        android:onClick="selectDatePicker"-->
+<!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/btnAddTour"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:id="@+id/btnUpdateTour"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+   <androidx.appcompat.widget.SearchView
+       android:id="@+id/search"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:queryHint="Tìm kiếm..."
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách lịch trình"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleTour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
